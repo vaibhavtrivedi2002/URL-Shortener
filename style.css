@@ -1,0 +1,99 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Container Styles */
+.container {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 400px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  /* Responsive Adjustments */
+  width: 80%; /* Adjust container width based on screen size */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Icon Styles */
+.container i {
+  font-size: calc(100px - 2vw); /* Adjust icon size based on viewport width */
+  margin-bottom: 10px;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Label Styles */
+label {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Input & Textarea Styles */
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #000;
+  font-size: 14px;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: #222;
+}
+
+/* Button Styles */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  color: #000;
+  border: 2px solid #000;
+  padding: 8px;
+  font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Textarea Styles */
+textarea {
+  resize: none;
+}
